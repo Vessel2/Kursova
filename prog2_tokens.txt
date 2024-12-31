@@ -1,0 +1,220 @@
+==========================================================
+|  #  |    SYMBOL    |    TYPE    |     VALUE     | LINE |
+|=====|==============|============|===============|======|
+|  1  | startprogram |    Program |  startprogram |    2 |
+|  2  |    startblok |      Start |     startblok |    3 |
+|  3  |     variable |       Vars |      variable |    4 |
+|  4  |      longint |    VarType |       longint |    4 |
+|  5  |              | Identifier |      aaaaaaaa |    4 |
+|  6  |            , |      Comma |             , |    4 |
+|  7  |              | Identifier |      bbbbbbbb |    4 |
+|  8  |            , |      Comma |             , |    4 |
+|  9  |              | Identifier |      cccccccc |    4 |
+|  10 |            ; |  Semicolon |             ; |    4 |
+|  11 |        write |      Write |         write |    5 |
+|  12 |            ( |    LBraket |             ( |    5 |
+|  13 |              |     String |     Input A:  |    5 |
+|  14 |            ) |    RBraket |             ) |    5 |
+|  15 |            ; |  Semicolon |             ; |    5 |
+|  16 |         read |       Read |          read |    6 |
+|  17 |            ( |    LBraket |             ( |    6 |
+|  18 |              | Identifier |      aaaaaaaa |    6 |
+|  19 |            ) |    RBraket |             ) |    6 |
+|  20 |            ; |  Semicolon |             ; |    6 |
+|  21 |        write |      Write |         write |    7 |
+|  22 |            ( |    LBraket |             ( |    7 |
+|  23 |              |     String |     Input B:  |    7 |
+|  24 |            ) |    RBraket |             ) |    7 |
+|  25 |            ; |  Semicolon |             ; |    7 |
+|  26 |         read |       Read |          read |    8 |
+|  27 |            ( |    LBraket |             ( |    8 |
+|  28 |              | Identifier |      bbbbbbbb |    8 |
+|  29 |            ) |    RBraket |             ) |    8 |
+|  30 |            ; |  Semicolon |             ; |    8 |
+|  31 |        write |      Write |         write |    9 |
+|  32 |            ( |    LBraket |             ( |    9 |
+|  33 |              |     String |     Input C:  |    9 |
+|  34 |            ) |    RBraket |             ) |    9 |
+|  35 |            ; |  Semicolon |             ; |    9 |
+|  36 |         read |       Read |          read |   10 |
+|  37 |            ( |    LBraket |             ( |   10 |
+|  38 |              | Identifier |      cccccccc |   10 |
+|  39 |            ) |    RBraket |             ) |   10 |
+|  40 |            ; |  Semicolon |             ; |   10 |
+|  41 |           if |         If |            if |   11 |
+|  42 |            ( |    LBraket |             ( |   11 |
+|  43 |              | Identifier |      aaaaaaaa |   11 |
+|  44 |           >> |     Greate |            >> |   11 |
+|  45 |              | Identifier |      bbbbbbbb |   11 |
+|  46 |            ) |    RBraket |             ) |   11 |
+|  47 |    startblok |      Start |     startblok |   12 |
+|  48 |           if |         If |            if |   13 |
+|  49 |            ( |    LBraket |             ( |   13 |
+|  50 |              | Identifier |      aaaaaaaa |   13 |
+|  51 |           >> |     Greate |            >> |   13 |
+|  52 |              | Identifier |      cccccccc |   13 |
+|  53 |            ) |    RBraket |             ) |   13 |
+|  54 |    startblok |      Start |     startblok |   14 |
+|  55 |         goto |       Goto |          goto |   15 |
+|  56 |              | Identifier |      aisbig03 |   15 |
+|  57 |            ; |  Semicolon |             ; |   15 |
+|  58 |      endblok |        End |       endblok |   16 |
+|  59 |         else |       Else |          else |   17 |
+|  60 |    startblok |      Start |     startblok |   18 |
+|  61 |        write |      Write |         write |   19 |
+|  62 |            ( |    LBraket |             ( |   19 |
+|  63 |              | Identifier |      cccccccc |   19 |
+|  64 |            ) |    RBraket |             ) |   19 |
+|  65 |            ; |  Semicolon |             ; |   19 |
+|  66 |         goto |       Goto |          goto |   20 |
+|  67 |              | Identifier |      getoutif |   20 |
+|  68 |            ; |  Semicolon |             ; |   20 |
+|  69 |              |      Label |     aisbig03: |   21 |
+|  70 |        write |      Write |         write |   22 |
+|  71 |            ( |    LBraket |             ( |   22 |
+|  72 |              | Identifier |      aaaaaaaa |   22 |
+|  73 |            ) |    RBraket |             ) |   22 |
+|  74 |            ; |  Semicolon |             ; |   22 |
+|  75 |         goto |       Goto |          goto |   23 |
+|  76 |              | Identifier |      getoutif |   23 |
+|  77 |            ; |  Semicolon |             ; |   23 |
+|  78 |      endblok |        End |       endblok |   24 |
+|  79 |      endblok |        End |       endblok |   25 |
+|  80 |           if |         If |            if |   26 |
+|  81 |            ( |    LBraket |             ( |   26 |
+|  82 |              | Identifier |      bbbbbbbb |   26 |
+|  83 |           << |       Less |            << |   26 |
+|  84 |              | Identifier |      cccccccc |   26 |
+|  85 |            ) |    RBraket |             ) |   26 |
+|  86 |    startblok |      Start |     startblok |   27 |
+|  87 |        write |      Write |         write |   28 |
+|  88 |            ( |    LBraket |             ( |   28 |
+|  89 |              | Identifier |      cccccccc |   28 |
+|  90 |            ) |    RBraket |             ) |   28 |
+|  91 |            ; |  Semicolon |             ; |   28 |
+|  92 |      endblok |        End |       endblok |   29 |
+|  93 |         else |       Else |          else |   30 |
+|  94 |    startblok |      Start |     startblok |   31 |
+|  95 |        write |      Write |         write |   32 |
+|  96 |            ( |    LBraket |             ( |   32 |
+|  97 |              | Identifier |      bbbbbbbb |   32 |
+|  98 |            ) |    RBraket |             ) |   32 |
+|  99 |            ; |  Semicolon |             ; |   32 |
+| 100 |      endblok |        End |       endblok |   33 |
+| 101 |              |      Label |     getoutif: |   34 |
+| 102 |        write |      Write |         write |   35 |
+| 103 |            ( |    LBraket |             ( |   35 |
+| 104 |              |     String |            \n |   35 |
+| 105 |            ) |    RBraket |             ) |   35 |
+| 106 |            ; |  Semicolon |             ; |   35 |
+| 107 |           if |         If |            if |   36 |
+| 108 |            ( |    LBraket |             ( |   36 |
+| 109 |            ( |    LBraket |             ( |   36 |
+| 110 |              | Identifier |      aaaaaaaa |   36 |
+| 111 |           == |      Equal |            == |   36 |
+| 112 |              | Identifier |      bbbbbbbb |   36 |
+| 113 |            ) |    RBraket |             ) |   36 |
+| 114 |            & |        And |             & |   36 |
+| 115 |            ( |    LBraket |             ( |   36 |
+| 116 |              | Identifier |      aaaaaaaa |   36 |
+| 117 |           == |      Equal |            == |   36 |
+| 118 |              | Identifier |      cccccccc |   36 |
+| 119 |            ) |    RBraket |             ) |   36 |
+| 120 |            & |        And |             & |   36 |
+| 121 |            ( |    LBraket |             ( |   36 |
+| 122 |              | Identifier |      bbbbbbbb |   36 |
+| 123 |           == |      Equal |            == |   36 |
+| 124 |              | Identifier |      cccccccc |   36 |
+| 125 |            ) |    RBraket |             ) |   36 |
+| 126 |            ) |    RBraket |             ) |   36 |
+| 127 |    startblok |      Start |     startblok |   37 |
+| 128 |        write |      Write |         write |   38 |
+| 129 |            ( |    LBraket |             ( |   38 |
+| 130 |              |     Number |             1 |   38 |
+| 131 |            ) |    RBraket |             ) |   38 |
+| 132 |            ; |  Semicolon |             ; |   38 |
+| 133 |      endblok |        End |       endblok |   39 |
+| 134 |         else |       Else |          else |   40 |
+| 135 |    startblok |      Start |     startblok |   41 |
+| 136 |        write |      Write |         write |   42 |
+| 137 |            ( |    LBraket |             ( |   42 |
+| 138 |              |     Number |             0 |   42 |
+| 139 |            ) |    RBraket |             ) |   42 |
+| 140 |            ; |  Semicolon |             ; |   42 |
+| 141 |      endblok |        End |       endblok |   43 |
+| 142 |        write |      Write |         write |   44 |
+| 143 |            ( |    LBraket |             ( |   44 |
+| 144 |              |     String |            \n |   44 |
+| 145 |            ) |    RBraket |             ) |   44 |
+| 146 |            ; |  Semicolon |             ; |   44 |
+| 147 |           if |         If |            if |   45 |
+| 148 |            ( |    LBraket |             ( |   45 |
+| 149 |            ( |    LBraket |             ( |   45 |
+| 150 |              | Identifier |      aaaaaaaa |   45 |
+| 151 |           << |       Less |            << |   45 |
+| 152 |              |     Number |             0 |   45 |
+| 153 |            ) |    RBraket |             ) |   45 |
+| 154 |            | |         Or |             | |   45 |
+| 155 |            ( |    LBraket |             ( |   45 |
+| 156 |              | Identifier |      bbbbbbbb |   45 |
+| 157 |           << |       Less |            << |   45 |
+| 158 |              |     Number |             0 |   45 |
+| 159 |            ) |    RBraket |             ) |   45 |
+| 160 |            | |         Or |             | |   45 |
+| 161 |            ( |    LBraket |             ( |   45 |
+| 162 |              | Identifier |      cccccccc |   45 |
+| 163 |           << |       Less |            << |   45 |
+| 164 |              |     Number |             0 |   45 |
+| 165 |            ) |    RBraket |             ) |   45 |
+| 166 |            ) |    RBraket |             ) |   45 |
+| 167 |    startblok |      Start |     startblok |   46 |
+| 168 |        write |      Write |         write |   47 |
+| 169 |            ( |    LBraket |             ( |   47 |
+| 170 |              |     Number |            -1 |   47 |
+| 171 |            ) |    RBraket |             ) |   47 |
+| 172 |            ; |  Semicolon |             ; |   47 |
+| 173 |      endblok |        End |       endblok |   48 |
+| 174 |         else |       Else |          else |   49 |
+| 175 |    startblok |      Start |     startblok |   50 |
+| 176 |        write |      Write |         write |   51 |
+| 177 |            ( |    LBraket |             ( |   51 |
+| 178 |              |     Number |             0 |   51 |
+| 179 |            ) |    RBraket |             ) |   51 |
+| 180 |            ; |  Semicolon |             ; |   51 |
+| 181 |      endblok |        End |       endblok |   52 |
+| 182 |        write |      Write |         write |   53 |
+| 183 |            ( |    LBraket |             ( |   53 |
+| 184 |              |     String |            \n |   53 |
+| 185 |            ) |    RBraket |             ) |   53 |
+| 186 |            ; |  Semicolon |             ; |   53 |
+| 187 |           if |         If |            if |   54 |
+| 188 |            ( |    LBraket |             ( |   54 |
+| 189 |            ! |        Not |             ! |   54 |
+| 190 |            ( |    LBraket |             ( |   54 |
+| 191 |              | Identifier |      aaaaaaaa |   54 |
+| 192 |           << |       Less |            << |   54 |
+| 193 |            ( |    LBraket |             ( |   54 |
+| 194 |              | Identifier |      bbbbbbbb |   54 |
+| 195 |          add |   Addition |           add |   54 |
+| 196 |              | Identifier |      cccccccc |   54 |
+| 197 |            ) |    RBraket |             ) |   54 |
+| 198 |            ) |    RBraket |             ) |   54 |
+| 199 |            ) |    RBraket |             ) |   54 |
+| 200 |    startblok |      Start |     startblok |   55 |
+| 201 |        write |      Write |         write |   56 |
+| 202 |            ( |    LBraket |             ( |   56 |
+| 203 |              |     Number |            10 |   56 |
+| 204 |            ) |    RBraket |             ) |   56 |
+| 205 |            ; |  Semicolon |             ; |   56 |
+| 206 |      endblok |        End |       endblok |   57 |
+| 207 |         else |       Else |          else |   58 |
+| 208 |    startblok |      Start |     startblok |   59 |
+| 209 |        write |      Write |         write |   60 |
+| 210 |            ( |    LBraket |             ( |   60 |
+| 211 |              |     Number |             0 |   60 |
+| 212 |            ) |    RBraket |             ) |   60 |
+| 213 |            ; |  Semicolon |             ; |   60 |
+| 214 |      endblok |        End |       endblok |   61 |
+| 215 |      endblok |        End |       endblok |   62 |
+| 216 |              |  EndOfFile |               |   -1 |
+==========================================================

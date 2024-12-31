@@ -1,0 +1,50 @@
+##Prog3
+startprogram
+startblok
+variable longint aaaaaaaa,aaaaaaa2,bbbbbbbb,xxxxxxxx,ccccccc1,ccccccc2;
+write("Input A: ");
+read(aaaaaaaa);
+write("Input B: ");
+read(bbbbbbbb);
+write("for to do");
+for aaaaaaa2<-aaaaaaaa to bbbbbbbb do
+startblok
+	write("\n");
+	write(aaaaaaa2 * aaaaaaa2);
+endblok
+write("\nfor downto do");
+for aaaaaaa2<-bbbbbbbb downto aaaaaaaa do
+startblok
+	write("\n");
+	write(aaaaaaa2 * aaaaaaa2);
+endblok
+
+write("\nwhile A * B: ");
+xxxxxxxx<-0;
+ccccccc1<-0;
+while(ccccccc1 << aaaaaaaa) 
+startblok
+	ccccccc2<-0;
+	while (ccccccc2 << bbbbbbbb)
+	startblok	
+		xxxxxxxx<-xxxxxxxx add 1;
+		ccccccc2<-ccccccc2 add 1;
+	endblok
+ccccccc1<-ccccccc1 add 1;	
+endblok
+write(xxxxxxxx);
+
+write("\nrepeat until A * B: ");
+xxxxxxxx<-0;
+ccccccc1<-1;
+repeat
+  ccccccc2<-1;
+  repeat
+    xxxxxxxx<-xxxxxxxx add 1;
+    ccccccc2<-ccccccc2 add 1;
+  until(!(ccccccc2 >> bbbbbbbb))
+  ccccccc1<-ccccccc1 add 1;
+until(!(ccccccc1 >> aaaaaaaa))
+write(xxxxxxxx);
+
+endblok

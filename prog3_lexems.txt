@@ -1,0 +1,228 @@
+========================================================================
+|  #  |    SYMBOL    |      TYPE      |          VALUE          | LINE |
+|=====|==============|================|=========================|======|
+|  1  |           ## |       LComment |                      ## |    1 |
+|  2  |              |        Comment |                   Prog3 |    1 |
+|  3  | startprogram |        Program |            startprogram |    2 |
+|  4  |    startblok |          Start |               startblok |    3 |
+|  5  |     variable |           Vars |                variable |    4 |
+|  6  |      longint |        VarType |                 longint |    4 |
+|  7  |              |     Identifier |                aaaaaaaa |    4 |
+|  8  |            , |          Comma |                       , |    4 |
+|  9  |              |     Identifier |                aaaaaaa2 |    4 |
+|  10 |            , |          Comma |                       , |    4 |
+|  11 |              |     Identifier |                bbbbbbbb |    4 |
+|  12 |            , |          Comma |                       , |    4 |
+|  13 |              |     Identifier |                xxxxxxxx |    4 |
+|  14 |            , |          Comma |                       , |    4 |
+|  15 |              |     Identifier |                ccccccc1 |    4 |
+|  16 |            , |          Comma |                       , |    4 |
+|  17 |              |     Identifier |                ccccccc2 |    4 |
+|  18 |            ; |      Semicolon |                       ; |    4 |
+|  19 |        write |          Write |                   write |    5 |
+|  20 |            ( |        LBraket |                       ( |    5 |
+|  21 |            " |         Quotes |                       " |    5 |
+|  22 |              |         String |               Input A:  |    5 |
+|  23 |            " |         Quotes |                       " |    5 |
+|  24 |            ) |        RBraket |                       ) |    5 |
+|  25 |            ; |      Semicolon |                       ; |    5 |
+|  26 |         read |           Read |                    read |    6 |
+|  27 |            ( |        LBraket |                       ( |    6 |
+|  28 |              |     Identifier |                aaaaaaaa |    6 |
+|  29 |            ) |        RBraket |                       ) |    6 |
+|  30 |            ; |      Semicolon |                       ; |    6 |
+|  31 |        write |          Write |                   write |    7 |
+|  32 |            ( |        LBraket |                       ( |    7 |
+|  33 |            " |         Quotes |                       " |    7 |
+|  34 |              |         String |               Input B:  |    7 |
+|  35 |            " |         Quotes |                       " |    7 |
+|  36 |            ) |        RBraket |                       ) |    7 |
+|  37 |            ; |      Semicolon |                       ; |    7 |
+|  38 |         read |           Read |                    read |    8 |
+|  39 |            ( |        LBraket |                       ( |    8 |
+|  40 |              |     Identifier |                bbbbbbbb |    8 |
+|  41 |            ) |        RBraket |                       ) |    8 |
+|  42 |            ; |      Semicolon |                       ; |    8 |
+|  43 |        write |          Write |                   write |    9 |
+|  44 |            ( |        LBraket |                       ( |    9 |
+|  45 |            " |         Quotes |                       " |    9 |
+|  46 |              |         String |               for to do |    9 |
+|  47 |            " |         Quotes |                       " |    9 |
+|  48 |            ) |        RBraket |                       ) |    9 |
+|  49 |            ; |      Semicolon |                       ; |    9 |
+|  50 |          for |            For |                     for |   10 |
+|  51 |              |     Identifier |                aaaaaaa2 |   10 |
+|  52 |           <- |     Assignment |                      <- |   10 |
+|  53 |              |     Identifier |                aaaaaaaa |   10 |
+|  54 |           to |             To |                      to |   10 |
+|  55 |              |     Identifier |                bbbbbbbb |   10 |
+|  56 |           do |             Do |                      do |   10 |
+|  57 |    startblok |          Start |               startblok |   11 |
+|  58 |        write |          Write |                   write |   12 |
+|  59 |            ( |        LBraket |                       ( |   12 |
+|  60 |            " |         Quotes |                       " |   12 |
+|  61 |              |         String |                      \n |   12 |
+|  62 |            " |         Quotes |                       " |   12 |
+|  63 |            ) |        RBraket |                       ) |   12 |
+|  64 |            ; |      Semicolon |                       ; |   12 |
+|  65 |        write |          Write |                   write |   13 |
+|  66 |            ( |        LBraket |                       ( |   13 |
+|  67 |              |     Identifier |                aaaaaaa2 |   13 |
+|  68 |            * | Multiplication |                       * |   13 |
+|  69 |              |     Identifier |                aaaaaaa2 |   13 |
+|  70 |            ) |        RBraket |                       ) |   13 |
+|  71 |            ; |      Semicolon |                       ; |   13 |
+|  72 |      endblok |            End |                 endblok |   14 |
+|  73 |        write |          Write |                   write |   15 |
+|  74 |            ( |        LBraket |                       ( |   15 |
+|  75 |            " |         Quotes |                       " |   15 |
+|  76 |              |         String |         \nfor downto do |   15 |
+|  77 |            " |         Quotes |                       " |   15 |
+|  78 |            ) |        RBraket |                       ) |   15 |
+|  79 |            ; |      Semicolon |                       ; |   15 |
+|  80 |          for |            For |                     for |   16 |
+|  81 |              |     Identifier |                aaaaaaa2 |   16 |
+|  82 |           <- |     Assignment |                      <- |   16 |
+|  83 |              |     Identifier |                bbbbbbbb |   16 |
+|  84 |       downto |         DownTo |                  downto |   16 |
+|  85 |              |     Identifier |                aaaaaaaa |   16 |
+|  86 |           do |             Do |                      do |   16 |
+|  87 |    startblok |          Start |               startblok |   17 |
+|  88 |        write |          Write |                   write |   18 |
+|  89 |            ( |        LBraket |                       ( |   18 |
+|  90 |            " |         Quotes |                       " |   18 |
+|  91 |              |         String |                      \n |   18 |
+|  92 |            " |         Quotes |                       " |   18 |
+|  93 |            ) |        RBraket |                       ) |   18 |
+|  94 |            ; |      Semicolon |                       ; |   18 |
+|  95 |        write |          Write |                   write |   19 |
+|  96 |            ( |        LBraket |                       ( |   19 |
+|  97 |              |     Identifier |                aaaaaaa2 |   19 |
+|  98 |            * | Multiplication |                       * |   19 |
+|  99 |              |     Identifier |                aaaaaaa2 |   19 |
+| 100 |            ) |        RBraket |                       ) |   19 |
+| 101 |            ; |      Semicolon |                       ; |   19 |
+| 102 |      endblok |            End |                 endblok |   20 |
+| 103 |        write |          Write |                   write |   22 |
+| 104 |            ( |        LBraket |                       ( |   22 |
+| 105 |            " |         Quotes |                       " |   22 |
+| 106 |              |         String |         \nwhile A * B:  |   22 |
+| 107 |            " |         Quotes |                       " |   22 |
+| 108 |            ) |        RBraket |                       ) |   22 |
+| 109 |            ; |      Semicolon |                       ; |   22 |
+| 110 |              |     Identifier |                xxxxxxxx |   23 |
+| 111 |           <- |     Assignment |                      <- |   23 |
+| 112 |              |         Number |                       0 |   23 |
+| 113 |            ; |      Semicolon |                       ; |   23 |
+| 114 |              |     Identifier |                ccccccc1 |   24 |
+| 115 |           <- |     Assignment |                      <- |   24 |
+| 116 |              |         Number |                       0 |   24 |
+| 117 |            ; |      Semicolon |                       ; |   24 |
+| 118 |        while |          While |                   while |   25 |
+| 119 |            ( |        LBraket |                       ( |   25 |
+| 120 |              |     Identifier |                ccccccc1 |   25 |
+| 121 |           << |           Less |                      << |   25 |
+| 122 |              |     Identifier |                aaaaaaaa |   25 |
+| 123 |            ) |        RBraket |                       ) |   25 |
+| 124 |    startblok |          Start |               startblok |   26 |
+| 125 |              |     Identifier |                ccccccc2 |   27 |
+| 126 |           <- |     Assignment |                      <- |   27 |
+| 127 |              |         Number |                       0 |   27 |
+| 128 |            ; |      Semicolon |                       ; |   27 |
+| 129 |        while |          While |                   while |   28 |
+| 130 |            ( |        LBraket |                       ( |   28 |
+| 131 |              |     Identifier |                ccccccc2 |   28 |
+| 132 |           << |           Less |                      << |   28 |
+| 133 |              |     Identifier |                bbbbbbbb |   28 |
+| 134 |            ) |        RBraket |                       ) |   28 |
+| 135 |    startblok |          Start |               startblok |   29 |
+| 136 |              |     Identifier |                xxxxxxxx |   30 |
+| 137 |           <- |     Assignment |                      <- |   30 |
+| 138 |              |     Identifier |                xxxxxxxx |   30 |
+| 139 |          add |       Addition |                     add |   30 |
+| 140 |              |         Number |                       1 |   30 |
+| 141 |            ; |      Semicolon |                       ; |   30 |
+| 142 |              |     Identifier |                ccccccc2 |   31 |
+| 143 |           <- |     Assignment |                      <- |   31 |
+| 144 |              |     Identifier |                ccccccc2 |   31 |
+| 145 |          add |       Addition |                     add |   31 |
+| 146 |              |         Number |                       1 |   31 |
+| 147 |            ; |      Semicolon |                       ; |   31 |
+| 148 |      endblok |            End |                 endblok |   32 |
+| 149 |              |     Identifier |                ccccccc1 |   33 |
+| 150 |           <- |     Assignment |                      <- |   33 |
+| 151 |              |     Identifier |                ccccccc1 |   33 |
+| 152 |          add |       Addition |                     add |   33 |
+| 153 |              |         Number |                       1 |   33 |
+| 154 |            ; |      Semicolon |                       ; |   33 |
+| 155 |      endblok |            End |                 endblok |   34 |
+| 156 |        write |          Write |                   write |   35 |
+| 157 |            ( |        LBraket |                       ( |   35 |
+| 158 |              |     Identifier |                xxxxxxxx |   35 |
+| 159 |            ) |        RBraket |                       ) |   35 |
+| 160 |            ; |      Semicolon |                       ; |   35 |
+| 161 |        write |          Write |                   write |   37 |
+| 162 |            ( |        LBraket |                       ( |   37 |
+| 163 |            " |         Quotes |                       " |   37 |
+| 164 |              |         String |  \nrepeat until A * B:  |   37 |
+| 165 |            " |         Quotes |                       " |   37 |
+| 166 |            ) |        RBraket |                       ) |   37 |
+| 167 |            ; |      Semicolon |                       ; |   37 |
+| 168 |              |     Identifier |                xxxxxxxx |   38 |
+| 169 |           <- |     Assignment |                      <- |   38 |
+| 170 |              |         Number |                       0 |   38 |
+| 171 |            ; |      Semicolon |                       ; |   38 |
+| 172 |              |     Identifier |                ccccccc1 |   39 |
+| 173 |           <- |     Assignment |                      <- |   39 |
+| 174 |              |         Number |                       1 |   39 |
+| 175 |            ; |      Semicolon |                       ; |   39 |
+| 176 |       repeat |         Repeat |                  repeat |   40 |
+| 177 |              |     Identifier |                ccccccc2 |   41 |
+| 178 |           <- |     Assignment |                      <- |   41 |
+| 179 |              |         Number |                       1 |   41 |
+| 180 |            ; |      Semicolon |                       ; |   41 |
+| 181 |       repeat |         Repeat |                  repeat |   42 |
+| 182 |              |     Identifier |                xxxxxxxx |   43 |
+| 183 |           <- |     Assignment |                      <- |   43 |
+| 184 |              |     Identifier |                xxxxxxxx |   43 |
+| 185 |          add |       Addition |                     add |   43 |
+| 186 |              |         Number |                       1 |   43 |
+| 187 |            ; |      Semicolon |                       ; |   43 |
+| 188 |              |     Identifier |                ccccccc2 |   44 |
+| 189 |           <- |     Assignment |                      <- |   44 |
+| 190 |              |     Identifier |                ccccccc2 |   44 |
+| 191 |          add |       Addition |                     add |   44 |
+| 192 |              |         Number |                       1 |   44 |
+| 193 |            ; |      Semicolon |                       ; |   44 |
+| 194 |        until |          Until |                   until |   45 |
+| 195 |            ( |        LBraket |                       ( |   45 |
+| 196 |            ! |            Not |                       ! |   45 |
+| 197 |            ( |        LBraket |                       ( |   45 |
+| 198 |              |     Identifier |                ccccccc2 |   45 |
+| 199 |           >> |         Greate |                      >> |   45 |
+| 200 |              |     Identifier |                bbbbbbbb |   45 |
+| 201 |            ) |        RBraket |                       ) |   45 |
+| 202 |            ) |        RBraket |                       ) |   45 |
+| 203 |              |     Identifier |                ccccccc1 |   46 |
+| 204 |           <- |     Assignment |                      <- |   46 |
+| 205 |              |     Identifier |                ccccccc1 |   46 |
+| 206 |          add |       Addition |                     add |   46 |
+| 207 |              |         Number |                       1 |   46 |
+| 208 |            ; |      Semicolon |                       ; |   46 |
+| 209 |        until |          Until |                   until |   47 |
+| 210 |            ( |        LBraket |                       ( |   47 |
+| 211 |            ! |            Not |                       ! |   47 |
+| 212 |            ( |        LBraket |                       ( |   47 |
+| 213 |              |     Identifier |                ccccccc1 |   47 |
+| 214 |           >> |         Greate |                      >> |   47 |
+| 215 |              |     Identifier |                aaaaaaaa |   47 |
+| 216 |            ) |        RBraket |                       ) |   47 |
+| 217 |            ) |        RBraket |                       ) |   47 |
+| 218 |        write |          Write |                   write |   48 |
+| 219 |            ( |        LBraket |                       ( |   48 |
+| 220 |              |     Identifier |                xxxxxxxx |   48 |
+| 221 |            ) |        RBraket |                       ) |   48 |
+| 222 |            ; |      Semicolon |                       ; |   48 |
+| 223 |      endblok |            End |                 endblok |   50 |
+| 224 |              |      EndOfFile |                         |   -1 |
+========================================================================

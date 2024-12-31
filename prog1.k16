@@ -1,0 +1,25 @@
+##Prog1
+startprogram
+startblok
+variable longint aaaaaaaa,bbbbbbbb,xxxxxxxx,yyyyyyyy;
+write("Input A: ");
+read(aaaaaaaa);
+write("Input B: ");
+read(bbbbbbbb);
+write("A + B: ");
+write(aaaaaaaa add bbbbbbbb);
+write("\nA - B: ");
+write(aaaaaaaa sub bbbbbbbb);
+write("\nA * B: ");
+write(aaaaaaaa * bbbbbbbb);
+write("\nA / B: ");
+write(aaaaaaaa / bbbbbbbb);
+write("\nA % B: ");
+write(aaaaaaaa % bbbbbbbb);
+xxxxxxxx<-(aaaaaaaa sub bbbbbbbb) * 10 add (aaaaaaaa add bbbbbbbb) / 10;
+yyyyyyyy<-xxxxxxxx add (xxxxxxxx % 10);
+write("\nX = (A - B) * 10 + (A + B) / 10\n");
+write(xxxxxxxx);
+write("\nY = X + (X % 10)\n");
+write(yyyyyyyy);
+endblok

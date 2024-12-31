@@ -1,0 +1,62 @@
+##Prog2
+startprogram
+startblok
+variable longint aaaaaaaa,bbbbbbbb,cccccccc;
+write("Input A: ");
+read(aaaaaaaa);
+write("Input B: ");
+read(bbbbbbbb);
+write("Input C: ");
+read(cccccccc);
+if(aaaaaaaa >> bbbbbbbb)
+startblok
+	if(aaaaaaaa >> cccccccc)
+	startblok
+		goto aisbig03;		
+	endblok	
+	else
+	startblok
+		write(cccccccc);
+		goto getoutif;
+		aisbig03:		
+		write(aaaaaaaa);
+		goto getoutif;
+	endblok
+endblok	
+	if(bbbbbbbb << cccccccc)
+	startblok
+		write(cccccccc);
+	endblok	
+	else
+	startblok
+		write(bbbbbbbb);
+	endblok
+getoutif:	
+write("\n");
+if((aaaaaaaa == bbbbbbbb) & (aaaaaaaa == cccccccc) & (bbbbbbbb == cccccccc))
+startblok
+	write(1);
+endblok	
+else
+startblok
+	write(0);
+endblok
+write("\n");
+if((aaaaaaaa << 0) | (bbbbbbbb << 0) | (cccccccc << 0))
+startblok
+	write(- 1);
+endblok	
+else
+startblok
+	write(0);
+endblok
+write("\n");
+if(!(aaaaaaaa << (bbbbbbbb add cccccccc)))
+startblok
+	write(10);
+endblok	
+else
+startblok
+	write(0);
+endblok
+endblok
